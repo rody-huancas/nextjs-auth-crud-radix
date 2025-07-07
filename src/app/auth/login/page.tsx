@@ -1,6 +1,6 @@
+import NavLink from "next/link";
 import SigninForm from "@/components/auth/SigninForm";
 import { Card, Container, Flex, Heading, Text, Link } from "@radix-ui/themes";
-import NavLink from "next/link";
 
 const LoginPage = () => {
   return (
@@ -12,7 +12,7 @@ const LoginPage = () => {
 
             <SigninForm />
 
-            <Flex className="mt-3">
+            <Flex className="mt-3" gap="2">
               <Text>No tienes una cuenta?</Text>
               <Link asChild>
                 <NavLink href="/auth/register" passHref>
